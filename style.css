@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #111;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f5f5f5;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+}
+
+.book-call {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 80px;
+}
+
+.hero-left {
+  max-width: 50%;
+  margin-left: 80px;
+}
+
+.stats {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.stats h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #555;
+}
+
+.hero-left h1 {
+  font-size: 150px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.scroll {
+  margin-top: 60px;
+  font-size: 14px;
+  color: #555;
+}
+
+.hero-right {
+  position: relative;
+  height: 100vh; /* or set a specific px value */
+}
+
+.hero-right img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 85vh;
+  width: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Side text */
+.side-text {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+.year {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  color: #555;
+}
