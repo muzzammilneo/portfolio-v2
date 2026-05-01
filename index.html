@@ -3,52 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Mkm Muzzammil</title>
+  <title>Mkm Muzzammil — Software Engineer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Mkm Muzzammil — Software Engineer and UI/UX Designer crafting digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Abstract Decorative Elements -->
+  <div class="abstract-shapes">
+    <div class="shape shape-circle-1"></div>
+    <div class="shape shape-circle-2"></div>
+    <div class="shape shape-ring"></div>
+    <div class="shape shape-line-1"></div>
+    <div class="shape shape-line-2"></div>
+    <div class="shape shape-dot-grid"></div>
+    <div class="shape shape-gradient-blob"></div>
+    <div class="shape shape-cross"></div>
+  </div>
+
   <!-- Navbar -->
-  <header>
-    <div class="logo">M</div>
-    <nav>
+  <header id="navbar">
+    <a href="#" class="logo" id="logo">
+      <span class="logo-text">M</span>
+      <span class="logo-dot"></span>
+    </a>
+    <nav id="mainNav">
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+        <li><a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+        <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+        <li><a href="#blog" class="nav-link" data-text="Blog">Blog</a></li>
       </ul>
     </nav>
-    <a href="tel:+917628082867" class="book-call">Book A Call ↗</a>
+    <a href="tel:+917628082867" class="book-call" id="bookCall">
+      <span class="btn-text">Book A Call</span>
+      <span class="btn-arrow">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-left">
-      <div class="stats">
-        <div>
-          <h2>+5</h2>
-          <p>Project completed</p>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <!-- Stats -->
+        <div class="stats" id="stats">
+          <div class="stat-item">
+            <h2 class="stat-number" data-target="5">
+              <span class="stat-plus">+</span>
+              <span class="stat-value">0</span>
+            </h2>
+            <p class="stat-label">Projects<br>completed</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h2 class="stat-number" data-target="15">
+              <span class="stat-plus">+</span>
+              <span class="stat-value">0</span>
+            </h2>
+            <p class="stat-label">Products<br>made</p>
+          </div>
         </div>
-        <div>
-          <h2>+15</h2>
-          <p>Procuct made</p>
+
+        <!-- Heading -->
+        <div class="hero-heading">
+          <div class="heading-line">
+            <h1 class="reveal-text">
+              <span class="word"><span class="char-wrap"><span class="char">H</span></span><span class="char-wrap"><span class="char">e</span></span><span class="char-wrap"><span class="char">l</span></span><span class="char-wrap"><span class="char">l</span></span><span class="char-wrap"><span class="char">o</span></span></span>
+            </h1>
+          </div>
+        </div>
+
+        <!-- Tagline -->
+        <p class="tagline" id="tagline">
+          <span class="tagline-dash">—</span>
+          <span class="tagline-text">It's Mkm Muzzammil, a design wizard</span>
+        </p>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+          <div class="scroll-line"></div>
+          <span class="scroll-text">Scroll</span>
         </div>
       </div>
 
-      <h1>Hello</h1>
-      <p class="tagline">— It’s Mkm Muzzammil a design wizard</p>
-
-      <p class="scroll">Scroll down ↓</p>
-    </div>
-
-    <div class="hero-right">
-      <img src="photo.png" alt="Profile">
+      <div class="hero-right" id="heroImage">
+        <div class="image-frame">
+          <div class="image-reveal"></div>
+          <img src="photo.png" alt="Mkm Muzzammil portrait">
+        </div>
+        <div class="image-caption">
+          <span>Software Engineer</span>
+          <span class="caption-separator">&</span>
+          <span>UI/UX Designer</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Side Text -->
-  <div class="side-text">Software Engineer & Ui/Ux</div>
-  <div class="year">2022</div>
+  <!-- Side Elements -->
+  <div class="side-text" id="sideText">Software Engineer & UI/UX</div>
+  <div class="side-year" id="sideYear">©2026</div>
+
+  <!-- Social Links -->
+  <div class="social-links" id="socialLinks">
+    <a href="#" class="social-link" aria-label="GitHub">GH</a>
+    <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+    <a href="#" class="social-link" aria-label="Dribbble">DR</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
