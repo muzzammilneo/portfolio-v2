@@ -12,6 +12,9 @@
 </head>
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
   <!-- Cursor Follower -->
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
@@ -117,20 +120,20 @@
   <!-- ═══════════════════════════════════════════
        ABOUT SECTION
        ═══════════════════════════════════════════ -->
-  <section class="section about" id="about">
+  <section class="section about" id="about" data-scroll>
     <div class="section-container">
-      <div class="section-header">
+      <div class="section-header scroll-item" data-delay="0">
         <span class="section-number">01</span>
         <h2 class="section-title">About</h2>
         <div class="section-line"></div>
       </div>
       <div class="about-content">
-        <div class="about-text">
+        <div class="about-text scroll-item" data-delay="100">
           <p class="about-intro">UI/UX Designer and mobile application developer with <strong>four years of experience</strong> building React, React Native, React Native Expo, and other cross-platform solutions at Neopath Technologies.</p>
           <p class="about-detail">Skilled in UI/UX implementation and prototyping, Firebase integration, and full-stack event management systems using PHP and Laravel. Experienced in improving dashboard UX for enterprise ERP applications and delivering production-ready mobile apps for education-sector clients.</p>
           <p class="about-detail">Reliable, detail-oriented, and committed to clean, maintainable code.</p>
         </div>
-        <div class="about-info">
+        <div class="about-info scroll-item" data-delay="200">
           <div class="info-block">
             <span class="info-label">Current Role</span>
             <span class="info-value">Senior Developer — Front-End</span>
@@ -155,9 +158,9 @@
   <!-- ═══════════════════════════════════════════
        PROJECTS SECTION
        ═══════════════════════════════════════════ -->
-  <section class="section projects" id="portfolio">
+  <section class="section projects" id="portfolio" data-scroll>
     <div class="section-container">
-      <div class="section-header">
+      <div class="section-header scroll-item" data-delay="0">
         <span class="section-number">02</span>
         <h2 class="section-title">Projects</h2>
         <div class="section-line"></div>
@@ -165,7 +168,7 @@
       <div class="projects-grid">
 
         <!-- Project 1 -->
-        <article class="project-card" id="project1">
+        <article class="project-card scroll-item" id="project1" data-delay="100">
           <div class="project-index">01</div>
           <div class="project-content">
             <h3 class="project-name">PowerCampus Web App</h3>
@@ -184,7 +187,7 @@
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card" id="project2">
+        <article class="project-card scroll-item" id="project2" data-delay="220">
           <div class="project-index">02</div>
           <div class="project-content">
             <h3 class="project-name">PowerCampus Mobile App</h3>
@@ -204,7 +207,7 @@
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card" id="project3">
+        <article class="project-card scroll-item" id="project3" data-delay="340">
           <div class="project-index">03</div>
           <div class="project-content">
             <h3 class="project-name">NeoEventize</h3>
@@ -229,16 +232,16 @@
   <!-- ═══════════════════════════════════════════
        SKILLS SECTION
        ═══════════════════════════════════════════ -->
-  <section class="section skills" id="services">
+  <section class="section skills" id="services" data-scroll>
     <div class="section-container">
-      <div class="section-header">
+      <div class="section-header scroll-item" data-delay="0">
         <span class="section-number">03</span>
         <h2 class="section-title">Skills</h2>
         <div class="section-line"></div>
       </div>
       <div class="skills-grid">
 
-        <div class="skill-group">
+        <div class="skill-group scroll-item" data-delay="80">
           <h4 class="skill-group-title">Languages</h4>
           <div class="skill-items">
             <span class="skill-chip">JavaScript</span>
@@ -248,7 +251,7 @@
           </div>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group scroll-item" data-delay="160">
           <h4 class="skill-group-title">Frameworks & Libraries</h4>
           <div class="skill-items">
             <span class="skill-chip">React</span>
@@ -260,7 +263,7 @@
           </div>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group scroll-item" data-delay="240">
           <h4 class="skill-group-title">Tools & Platforms</h4>
           <div class="skill-items">
             <span class="skill-chip">Firebase (FCM, Auth)</span>
@@ -270,7 +273,7 @@
           </div>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group scroll-item" data-delay="320">
           <h4 class="skill-group-title">UI & Styling</h4>
           <div class="skill-items">
             <span class="skill-chip">Material UI</span>
@@ -279,7 +282,7 @@
           </div>
         </div>
 
-        <div class="skill-group">
+        <div class="skill-group scroll-item" data-delay="400">
           <h4 class="skill-group-title">Core Competencies</h4>
           <div class="skill-items">
             <span class="skill-chip">Cross-Platform Mobile Development</span>
@@ -295,16 +298,16 @@
   <!-- ═══════════════════════════════════════════
        CONTACT SECTION
        ═══════════════════════════════════════════ -->
-  <section class="section contact" id="contact">
+  <section class="section contact" id="contact" data-scroll>
     <div class="section-container">
-      <div class="section-header">
+      <div class="section-header scroll-item" data-delay="0">
         <span class="section-number">04</span>
         <h2 class="section-title">Contact</h2>
         <div class="section-line"></div>
       </div>
       <div class="contact-content">
-        <p class="contact-intro">Interested in working together? Let's connect and build something great.</p>
-        <div class="contact-links">
+        <p class="contact-intro scroll-item" data-delay="100">Interested in working together? Let's connect and build something great.</p>
+        <div class="contact-links scroll-item" data-delay="200">
           <a href="tel:+917628082867" class="contact-link" id="contactPhone">
             <span class="contact-link-label">Phone</span>
             <span class="contact-link-value">+91 762 808 2867</span>
@@ -324,7 +327,7 @@
             </span>
           </a>
         </div>
-        <p class="contact-footer">Currently based at <strong>Neopath Technologies Pvt. Ltd.</strong></p>
+        <p class="contact-footer scroll-item" data-delay="300">Currently based at <strong>Neopath Technologies Pvt. Ltd.</strong></p>
       </div>
     </div>
   </section>
