@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mkm Muzzammil — Software Engineer & UI/UX Designer</title>
-  <meta name="description" content="Portfolio of Mkm Muzzammil — Software Engineer and UI/UX Designer crafting digital experiences.">
+  <title>Muzzammil — UI/UX & Front-End Developer | React Native</title>
+  <meta name="description" content="Portfolio of Muzzammil — Senior Front-End Developer and UI/UX Designer specializing in React, React Native, and cross-platform mobile solutions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,9 +40,9 @@
     <nav id="mainNav">
       <ul>
         <li><a href="#about" class="nav-link" data-text="About">About</a></li>
-        <li><a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
-        <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
-        <li><a href="#blog" class="nav-link" data-text="Blog">Blog</a></li>
+        <li><a href="#portfolio" class="nav-link" data-text="Projects">Projects</a></li>
+        <li><a href="#services" class="nav-link" data-text="Skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
       </ul>
     </nav>
     <a href="tel:+917628082867" class="book-call" id="bookCall">
@@ -62,19 +62,19 @@
         <!-- Stats -->
         <div class="stats" id="stats">
           <div class="stat-item">
+            <h2 class="stat-number" data-target="4">
+              <span class="stat-plus">+</span>
+              <span class="stat-value">0</span>
+            </h2>
+            <p class="stat-label">Years<br>experience</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
             <h2 class="stat-number" data-target="5">
               <span class="stat-plus">+</span>
               <span class="stat-value">0</span>
             </h2>
-            <p class="stat-label">Projects<br>completed</p>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <h2 class="stat-number" data-target="15">
-              <span class="stat-plus">+</span>
-              <span class="stat-value">0</span>
-            </h2>
-            <p class="stat-label">Products<br>made</p>
+            <p class="stat-label">Projects<br>delivered</p>
           </div>
         </div>
 
@@ -90,7 +90,7 @@
         <!-- Tagline -->
         <p class="tagline" id="tagline">
           <span class="tagline-dash">—</span>
-          <span class="tagline-text">It's Mkm Muzzammil, a design wizard</span>
+          <span class="tagline-text">UI/UX Designer & React Native Developer crafting cross-platform experiences</span>
         </p>
 
         <!-- Scroll Indicator -->
@@ -103,10 +103,10 @@
       <div class="hero-right" id="heroImage">
         <div class="image-frame">
           <div class="image-reveal"></div>
-          <img src="photo.png" alt="Mkm Muzzammil portrait">
+          <img src="photo.png" alt="Muzzammil portrait">
         </div>
         <div class="image-caption">
-          <span>Software Engineer</span>
+          <span>Front-End Developer</span>
           <span class="caption-separator">&</span>
           <span>UI/UX Designer</span>
         </div>
@@ -114,15 +114,238 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">UI/UX Designer and mobile application developer with <strong>four years of experience</strong> building React, React Native, React Native Expo, and other cross-platform solutions at Neopath Technologies.</p>
+          <p class="about-detail">Skilled in UI/UX implementation and prototyping, Firebase integration, and full-stack event management systems using PHP and Laravel. Experienced in improving dashboard UX for enterprise ERP applications and delivering production-ready mobile apps for education-sector clients.</p>
+          <p class="about-detail">Reliable, detail-oriented, and committed to clean, maintainable code.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-block">
+            <span class="info-label">Current Role</span>
+            <span class="info-value">Senior Developer — Front-End</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Company</span>
+            <span class="info-value">Neopath Technologies Pvt. Ltd.</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Education</span>
+            <span class="info-value">BCA, JCRE Global College</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Experience</span>
+            <span class="info-value">~4 Years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════════════ -->
+  <section class="section projects" id="portfolio">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" id="project1">
+          <div class="project-index">01</div>
+          <div class="project-content">
+            <h3 class="project-name">PowerCampus Web App</h3>
+            <p class="project-type">Educational ERP Dashboard</p>
+            <p class="project-desc">Improved the UI/UX of the PowerCampus education ERP dashboard and built reusable React components for core application modules.</p>
+            <div class="project-meta">
+              <span class="project-period">Jul 2022 – Present</span>
+              <span class="project-role">Front-End Developer</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Material UI</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" id="project2">
+          <div class="project-index">02</div>
+          <div class="project-content">
+            <h3 class="project-name">PowerCampus Mobile App</h3>
+            <p class="project-type">Parent & Staff Mobile Apps</p>
+            <p class="project-desc">Led end-to-end push notification system (FCM) including native Kotlin modules, resolved Android/iOS build issues, and built custom UI components including drawer navigation and module screens.</p>
+            <div class="project-meta">
+              <span class="project-period">Jan 2023 – Present</span>
+              <span class="project-role">React Native Developer</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Zustand</span>
+              <span class="tag">Kotlin</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" id="project3">
+          <div class="project-index">03</div>
+          <div class="project-content">
+            <h3 class="project-name">NeoEventize</h3>
+            <p class="project-type">Event Management Platform</p>
+            <p class="project-desc">Built a full-stack event management app with online ticket purchase workflows, QR-based ticket validation, automated certificate generation, and member management modules.</p>
+            <div class="project-meta">
+              <span class="project-period">Feb 2025 – Present</span>
+              <span class="project-role">Full-Stack Developer</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+       ═══════════════════════════════════════════ -->
+  <section class="section skills" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-items">
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frameworks & Libraries</h4>
+          <div class="skill-items">
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">React Native</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Express</span>
+            <span class="skill-chip">Expo</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Tools & Platforms</h4>
+          <div class="skill-items">
+            <span class="skill-chip">Firebase (FCM, Auth)</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">UI & Styling</h4>
+          <div class="skill-items">
+            <span class="skill-chip">Material UI</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">UI/UX Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Core Competencies</h4>
+          <div class="skill-items">
+            <span class="skill-chip">Cross-Platform Mobile Development</span>
+            <span class="skill-chip">REST API Integration</span>
+            <span class="skill-chip">State Management (Redux/Zustand)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">Interested in working together? Let's connect and build something great.</p>
+        <div class="contact-links">
+          <a href="tel:+917628082867" class="contact-link" id="contactPhone">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-value">+91 762 808 2867</span>
+            <span class="contact-link-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+          <a href="mailto:muzzammil@neopath.in" class="contact-link" id="contactEmail">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">muzzammil@neopath.in</span>
+            <span class="contact-link-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <p class="contact-footer">Currently based at <strong>Neopath Technologies Pvt. Ltd.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <span class="footer-name">Muzzammil</span>
+      <span class="footer-sep">·</span>
+      <span class="footer-role">Senior Front-End Developer</span>
+    </div>
+  </footer>
+
   <!-- Side Elements -->
-  <div class="side-text" id="sideText">Software Engineer & UI/UX</div>
+  <div class="side-text" id="sideText">Front-End & React Native Developer</div>
   <div class="side-year" id="sideYear">©2026</div>
 
   <!-- Social Links -->
   <div class="social-links" id="socialLinks">
     <a href="#" class="social-link" aria-label="GitHub">GH</a>
     <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
-    <a href="#" class="social-link" aria-label="Dribbble">DR</a>
   </div>
 
   <script src="script.js"></script>
