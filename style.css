@@ -1112,6 +1112,23 @@ nav ul {
   background: rgba(255, 255, 255, 0.5);
   transition: all var(--duration-fast) var(--ease-out);
   cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.skill-chip i {
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: filter var(--duration-fast) var(--ease-out), opacity var(--duration-fast) var(--ease-out);
+}
+
+.skill-chip:hover i {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 .skill-chip:hover {
